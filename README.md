@@ -11,6 +11,8 @@ J'ai séparé dans un dossier "ECF_Garage" les fichier html, Css et Javascript d
 
 Avec les files données ici impossible de recréer le projet car vous ne possédez pas les images...
 
+Lien pour le site déployé : http://rendu-ecf-garage-vugliano.go.yj.fr/html/
+
 Merci,
 Bien à vous,
 Quentin Vugliano.
