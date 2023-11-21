@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Garage V.Parrot</title>
+        
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function(){
+                    if ($(".nav-link").hasClass("active")){
+                        $(".nav-link").removeClass("active");
+                    }
+                    else{
+                        $(".nav-link").addClass("active")
+                    }
+                })
+
+            });
+        </script>
+    </head>
+    <body>
+        <!--START HEADER-->
+        <header class="header">
+            <nav>
+                <ul class="list-links">
+                    <li>
+                        <img class="logo-header" src="../assets/Logo-grand.png" alt="Logo du garage Vincent Parrot">
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="index.html">
+                                Nos services
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="occasions.html">
+                                Véhicules d'occasion
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="contact.html">
+                                Contacts
+                            </a>
+                        </button>
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                    <!--<li>
+                        <a>Inscription</a>
+                    </li>
+                    <li>
+                        <a>Se connecter</a>
+                    </li>-->
+                </ul>
+            </nav>
+        </header>
+        <!--END HEADER-->
+        <!--START MAIN-->
+        <main class="flux">
+            <!--START COVER-->
+            <section class="cover">
+                <div class="cover-text">
+                    <h1 class="cover-title">L'expertise du Garage V.Parrot à votre service!</h1>
+                    <p class="cover-introduction text-paragraphe">Si vous recherchez un lieu de confiance pour réparer votre voiture ou en acquérir une d'occasion, Vincent Parrot et son personnel seront ravis de vous acceuillir dans leur fier garage Toulousain!</p>
+                </div>
+                <img src="../assets/photoequipevparrot.jpg" class="image-equipe" alt="Image du personnel radieux du garage de Vincent Parrot">
+            </section>
+            <!--END COVER-->
+
+            <!--START: Section services-->
+            <section class="services">
+                <div class="services-content">
+                    <img src="../assets/S0-la-liste-des-meilleurs-garages-de-france-192127.jpg" class="image-services" alt="Image d'un membre du personnel du garage réparant le moteur d'une voiture">
+                    <div class="services-texts">
+                        <h2 class="title-2">Nous proposons à coup sûr le service dont vous avez besoin!</h2>
+                        <p class="text-paragraphe-services">
+                            Si vous cherchez un garage automobile qui respecte votre véhicule pour des entretients ponctuels ou réguliez, vous êtes au bon endroit.
+                            Les services proposés par notre garage sont: 
+                            <ul class="text-paragraphe-services liste-services">
+                                <li>Réparation de carosserie</li>
+                                <li>Entretient mécanique</li>
+                                <li>Peinture</li>
+                                <li>Revêtement intérieur</li>
+                                <li>Contrôle technique</li>
+                                <li>Changement de pièces éléctroniques</li>
+                            </ul>
+                            <p class="text-paragraphe-services contact-button">Alors n'hésitez plus: <a href="contact.html"><button class="button">Contactez nous!</button></a></p>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--END: Section services-->
+
+            <!--START: Occasions-->
+            <section class="vers-occasion">
+                <div class="occasion-text">
+                    <h2 class="title-2">Découvrez notre gamme de voitures d'occasion</h2>
+                    <p class="text-paragraphe">Nous vendons également une sélection de véhicules d'occasion qui n'attendent que vous pour débuter leur seconde vie à vos côtés!</p>
+                    <a href="occasions.html"><button class="button">Voir les voitures disponibles</button></a>
+                </div>
+                <img src="../assets/apperçu-occasion.jpg" class="appercu-occasion" alt="Un apperçu de la catégorie voitures occasion">
+            </section>
+            <!--END: Occasions-->
+
+            <!--START: Avis-->
+            <section class="avis">
+                <div class="formulaire-avis">
+                    <h2 class="title-2">N'hésitez pas à nous laisser un avis!</h2>
+                    <!--<p>Les avis comptent beaucoup pour nous dans une optique de constante amélioration!</p>-->
+                    <div class="wrapper">
+                        <form action="">
+                            <h3 class="votre-avis">Votre avis compte pour nous!</h3>
+                            <div class="input-box">
+                                <input type="text" placeholder="Nom ou Pseudo" required>
+                            </div>
+                            <div class="input-box input-box-avis">
+                                <input type="text" placeholder="Votre avis" required>
+                            </div>
+                            <button class="button button-avis">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="avis-recents">
+                    <h2 class="title-3">Avis récents :</h2>
+                    <div class="avis-display">
+                        <ul>
+                            <li>
+                                <p class="avis-nom">Marie Mangein</p>
+                                <p>Je suis récemment passé au garage pour un problème de moteur j'ai été très bien reçue et le problème à été réglé en très peu de temps, je reviendrai!</p>
+                                <p class="avis-date">publié le 21-11-2023</p>
+                            </li>
+                            <li>
+                                <p class="avis-nom">Bilel Ramdani</p>
+                                <p>Ma voiture avait bien besoin d'un coup de neuf, les employés du garage ont été très pro, je suis ravis des services proposés</p>
+                                <p class="avis-date">publié le 13-11-2023</p>
+                            </li>
+                            <li>
+                                <p class="avis-nom">Jacques Hadi</p>
+                                <p>Un acceuil chaleureux, une bonne humeur ambiante et un travail de qualité! Je recommande ce garage</p>
+                                <p class="avis-date">publié le 02-11-2023</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="flux sticky-footer">
+            <section class="flux footer">
+                <button class="button button-footer"><a href="contacts.html">Nous contacter</a></button>
+                <p class="horaires">Horaires d'ouverture: lun/mar/mer/jeu/ven:8h-19h sam:9h-17h</p>
+                <p class="ouvert">Ouvert</p>
+            </section>
+            <p class="flux footer copy">@Copyright reserved Garage Vincent Parrot</p>
+        </footer>
+    </body>
+</html>
