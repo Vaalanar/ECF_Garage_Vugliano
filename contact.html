@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Garage V.Parrot</title>
+        
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function(){
+                    if ($(".nav-link").hasClass("active")){
+                        $(".nav-link").removeClass("active");
+                    }
+                    else{
+                        $(".nav-link").addClass("active")
+                    }
+                })
+
+            });
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <ul class="list-links">
+                    <li>
+                        <img class="logo-header" src="../assets/Logo-grand.png" alt="Logo du garage Vincent Parrot">
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="index.html">
+                                Nos services
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="occasions.html">
+                                Véhicules d'occasion
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="contact.html">
+                                Contacts
+                            </a>
+                        </button>
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                    <!--<li>
+                        <a>Inscription</a>
+                    </li>
+                    <li>
+                        <a>Se connecter</a>
+                    </li>-->
+                </ul>
+            </nav>
+        </header>
+        <main class="flux">
+            <div class="presentation-personnel">
+                <h2 class="title-2 personnel-title">Rencontrez notre équipe!</h2>
+                <ul class="personnel">
+                    <li class="membre vincent">
+                        <h3 class="title-3">Vincent Parrot</h3>
+                        <img class="photo-personnel" src="../assets/team_01.png" alt="photo de vincent parrot">
+                        <p class="nom-personnel">Directeur</p>
+                    </li>
+                    <li class="membre marie">
+                        <h3 class="title-3">Marie Lambre</h3>
+                        <img class="photo-personnel" src="../assets/team_02.png" alt="photo de marie huban">
+                        <p class="nom-personnel">Peintre</p>
+                    </li>
+                    <li class="membre ibrahim">
+                        <h3 class="title-3">Ibrahim Khouli</h3>
+                        <img class="photo-personnel" src="../assets/team_04.png" alt="photo de Ibrahim Khouli">
+                        <p class="nom-personnel">Technicien</p>
+                    </li>
+                    <li class="membre johan">
+                        <h3 class="title-3">Johan Lapre</h3>
+                        <img class="photo-personnel" src="../assets/team_05.png" alt="photo de Johan Lapre">
+                        <p class="nom-personnel">Controleur technique</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-map">
+                <section class="contact-coordonnees">
+                    <h2 class="title-2">Comment nous contacter?</h2>
+                    <p class="coordonnees">Téléphone: 05.72.53.09.67</p>
+                    <p class="coordonnees">@Mail: garage-v.parrot@gmail.com</p>
+                    <p class="coordonnees">Adresse: 346 rte de Saint Simon, 31100 Toulouse</p>
+                </section>
+            </div>
+            <div class="wrapper-contact">
+                <h2 class="title-2">Ou bien grâce à ce formulaire en ligne!</h2>
+                <!--<p>Les avis comptent beaucoup pour nous dans une optique de constante amélioration!</p>-->
+                <div class="wrapper">
+                    <form action="">
+                        <h3 class="votre-avis">Contactez-nous!</h3>
+                        <div class="input-box">
+                            <input type="text" placeholder="Nom, Prénom" required>
+                        </div>
+                        <div class="input-box input-box-avis">
+                            <input type="text" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-box input-box-avis">
+                            <input type="text" placeholder="Telephone" required>
+                        </div>
+                        <div class="input-box input-box-avis">
+                            <input type="text" placeholder="Message..." required>
+                        </div>
+                        <button class="button button-avis">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="flux sticky-footer">
+            <section class="flux footer">
+                <button class="button button-footer"><a href="contacts.html">Nous contacter</a></button>
+                <p class="horaires">Horaires d'ouverture: lun/mar/mer/jeu/ven:8h-19h sam:9h-17h</p>
+                <p class="ouvert">Ouvert</p>
+            </section>
+            <p class="flux footer copy">@Copyright reserved Garage Vincent Parrot</p>
+        </footer>
+    </body>
+</html>
