@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Garage V.Parrot</title>
+        
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+        
+        <script src="../js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function(){
+                    if ($(".nav-link").hasClass("active")){
+                        $(".nav-link").removeClass("active");
+                    }
+                    else{
+                        $(".nav-link").addClass("active")
+                    }
+                })
+
+            });
+        </script>
+
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <ul class="list-links">
+                    <li>
+                        <img class="logo-header" src="../assets/Logo-grand.png" alt="Logo du garage Vincent Parrot">
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="index.html">
+                                Nos services
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="occasions.html">
+                                Véhicules d'occasion
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-link">
+                        <button class="nav-buttons">
+                            <a href="contact.html">
+                                Contacts
+                            </a>
+                        </button>
+                    </li>
+                    <li class="toggle"><span class="bars"></span></li>
+                    <!--<li>
+                        <a>Inscription</a>
+                    </li>
+                    <li>
+                        <a>Se connecter</a>
+                    </li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <main class="recherche-occasion">
+                    
+            <div class="container-search flux">
+                <div class="search-bar">
+                    <h1 class="title">Vous cherchez une voiture en particulier?</h1>
+                    <input id="search" onkeyup="filter()" type="text" placeholder="Marque, Modèle, Couleur...">
+                </div>
+
+                <ul id="Menu" class="voitures-occasion">
+                    <li>
+                        <a href="#">
+                            <img src="../assets/voitures/clio rouge/Renault_Clio_Rouge_1.jpg" class="photo-voiture" alt="Photo d'une Renault Clio rouge">
+                            <p class="text-paragraphe">Marque: Renault</p>
+                            <p class="text-paragraphe">Modèle: Clio</p>
+                            <p class="text-paragraphe">Couleur: Rouge</p>
+                            <p class="text-paragraphe">Km: 21.000</p>
+                            <p class="text-paragraphe">Prix: 6.500€</p>                
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/voitures/audi TT bleue/Audi_TT_Bleue_1.jpg" class="photo-voiture" alt="Photo d'une Audi TT bleue">
+                            <p class="text-paragraphe">Marque: Audi</p>
+                            <p class="text-paragraphe">Modèle: TT</p>
+                            <p class="text-paragraphe">Couleur: Bleue</p>
+                            <p class="text-paragraphe">Km: 15660</p>
+                            <p class="text-paragraphe">Prix: 10000€</p>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img 
